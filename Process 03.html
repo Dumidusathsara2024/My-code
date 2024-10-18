@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 50px;
+        }
+        .contact {
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+        }
+        .popup p {
+            margin: 10px 0;
+        }
+        .popup-close {
+            cursor: pointer;
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <p>My name is Dumidu Sathsara. One of the most important things in my life is understanding what girls appreciate.</p>
+
+    <p>Here are some of the things that I think girls value:</p>
+    <p>1. Beauty and Charm: A girl takes pride in her appearance and carries herself with grace. Her beauty is a reflection of her uniqueness.</p>
+    <p>2. Honest Conversations: Engaging in genuine conversations allows her to share her thoughts and feelings openly. This connection is important to her.</p>
+    <p>3. Playfulness: A girl appreciates the ability to be playful and light-hearted. This adds joy and fun to relationships.</p>
+    <p>4. Sincere Love: A girl desires love that is based on truth and honesty. This creates a sense of security and trust.</p>
+    <p>5. Humility: A girl values humility in herself and others. Being humble is an admirable quality that strengthens relationships.</p>
+    <p>6. Beautiful Smiles: A girl's smile can brighten up anyone's day.</p>
+
+    <p class="contact" onclick="showPopup()">>Contact...</p>
+
+    <div class="popup" id="popup">
+        <p><strong>Name:</strong> Dumidu Sathsara</p>
+        <p><strong>Age:</strong> 14</p>
+        <p><strong>Country:</strong> Sri Lanka</p>
+        <span class="popup-close" onclick="hidePopup()">Close</span>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
